@@ -38,7 +38,7 @@ function preload ()
   this.load.image('tree', 'assets/tree.png');
   this.load.image('grass', 'assets/grass.png');
   this.load.image('ground', 'assets/platform.png');
-  this.load.image('star', 'assets/star.png');
+  this.load.image('star', 'assets/1_sm.png');
   this.load.image('bomb', 'assets/bomb.png');
   // spritesheet() takes 3 args: string nickname for the asset, filepath to file, frame dimension
   //this.load.spritesheet('dude', 'assets/dude.png', {frameWidth: 32, frameHeight: 48});
