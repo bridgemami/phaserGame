@@ -98,18 +98,18 @@ cursors= this.input.keyboard.createCursorKeys();
 console.log("7. keyboard");
   stars = this.physics.add.group({
     key: 'star',
-    repeat: 11,
-    setXY: { x: 12, y: 0, stepX: 70}
+    repeat: 9,
+    setXY: { x: 15, y: 0, stepX: 75}
   });
   console.log("8. add stars");
   stars.children.iterate(function (child) {
-    child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
+    child.setBounceY(Phaser.Math.FloatBetween(0, 1));
   console.log("9. add bounce & next bombs");
   });
   //bombs
   bombs= this.physics.add.group();
   //add score
-  scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000'});
+  scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '32px', fill: '#000'});
   //collide stars, player and bombs
   this.physics.add.collider(player, platforms);
   this.physics.add.collider(stars, platforms);
