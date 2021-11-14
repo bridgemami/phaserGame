@@ -52,7 +52,7 @@ function create ()
 {// display a game object in the visible game stage
     // 3 args: x-coord, y-coord, asset nickname string
   this.add.image(400, 300, 'sky').setScale(2.7);
-  this.add.image(400, 300, 'grass');
+  //this.add.image(400, 300, 'grass').setScale(2.7);
   this.add.image(400, 300, 'tree').setScale(2.7);
   //this.add.image(0, 0, 'sky').setOrigin(0, 0);
   //the star image
